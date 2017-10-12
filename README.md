@@ -106,7 +106,9 @@ Function in js are objects. That sy theses things are possible
  **Prototypal inheritance** : 
  
  Object => property1 =>object.property1
+ 
         => prototype => property2 => object.property2
+        
                      => prototype => .....
                      
  We can create another object which can point to same prototype of above.. that will be available to new obj
@@ -119,8 +121,11 @@ We can attach properties to prototype obj of an object created.. which will be a
 
 **scope** : where in code you have access to a particular variable or function
 **IIFE** : to immediately invoke a function 
-```(function(){
+
+```
+(function(){
 }());
+
 ```
 
 
