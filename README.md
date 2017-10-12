@@ -92,18 +92,36 @@ Function in js are objects. That sy theses things are possible
 
 **Objects and Object Literals**
 
-*Name value pair* : A name that is mapped to  a value. The name may defined more than once, but only can have one value in any given                         context . That value may be more name /value pairs.
+**Name value pair** : A name that is mapped to  a value. The name may defined more than once, but only can have one value in any given                         context . That value may be more name /value pairs.
 
-*Javascript Objects* : A collection of name value pairs.
-*Object Literals*    : Name/Value pairs separated by commas, surrounded in a curly brace. This is the easy way to create a js object
+**Javascript Objects** : A collection of name value pairs.
+**Object Literals**    : Name/Value pairs separated by commas, surrounded in a curly brace. This is the easy way to create a js object
 
 **Object** => primitive property
            => Object property
            => function method
      
  *inheritance* : one object gets access to the properties and methods of other object.
+ 
  **Prototypal inheritance** : 
+ 
+ Object => property1 =>object.property1
+        => prototype => property2 => object.property2
+                     => prototype => .....
+                     
+ We can create another object which can point to same prototype of above.. that will be available to new obj
+ 
+ Function constructors : normal function that is used to construct objects. *'this'* variable is used to point to new empty object. and automatically return the object.
+ 
+We can attach properties to prototype obj of an object created.. which will be available to the object.
 
+**Immediately Invoked Funcion Expression(IIFE)** 
+
+**scope** : where in code you have access to a particular variable or function
+**IIFE** : to immediately invoke a function 
+```(function(){
+}());
+```
 
 
 
