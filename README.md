@@ -128,6 +128,32 @@ We can attach properties to prototype obj of an object created.. which will be a
 
 ```
 
+### How node works
+
+**Require function**
+
+  * Require is function that you pass a *path* to 
+  ```var greet = require("/greet");
+  greet();
+  ```
+  * module.exports is what require function returns. Eg : In the greet.js
+  ```var greet = function(){
+	console.log('Hello');
+};
+
+//to make the greet function availble to the caller
+module.exports = greet;
+```
+  * This works because your code is actually wrapped in a fucntion that is given this things as parameters. ie 
+  ```(function(exports,require,module,_filename,_dirname){
+     // our code
+  });
+  ```
+  ie module,module.exports  etc is available to our module.
+  
+  
+  
+
 
 
 
